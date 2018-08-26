@@ -25,3 +25,21 @@ viewInfo({ username: 'nguyen', gender: 'male', age: 22 });
 var a = 'username';
 
 console.log(user[a]);
+
+
+//first-class function
+var viewFunc = function (u) {
+    console.log(u.username + ' ' + u.gender + ' ' + u.age);
+    return true;
+}
+
+console.log(typeof viewFunc);
+
+viewFunc.version = {
+    versionname: 'version',
+    number: 0.2
+}
+
+console.log(function () {
+    console.log('I\'m a function');
+});
