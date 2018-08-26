@@ -20,3 +20,8 @@ function viewInfo(params) {
 user.viewInfo();
 
 viewInfo({ username: 'nguyen', gender: 'male', age: 22 });
+
+//truy cập thành phần của object
+var a = 'username';
+
+console.log(user[a]);
