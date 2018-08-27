@@ -1,3 +1,5 @@
+// 5 - Implicit Lost
+
 function welcome() {
     // debugger;
     console.log('Welcome ' + this.username);
