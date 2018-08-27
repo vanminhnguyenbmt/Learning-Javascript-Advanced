@@ -1,7 +1,5 @@
-// 4 - Implicit Binding
-// thằng nào đang gọi hàm đó
-
 function welcome() {
+    // debugger;
     console.log('Welcome ' + this.username);
 }
 
@@ -10,8 +8,8 @@ var user = {
     welcome: welcome
 }
 
-// context
-user.welcome();
+var hi = user.welcome;
 
-// welcome();
+var username = 'minh nguyen';
 
+hi();
