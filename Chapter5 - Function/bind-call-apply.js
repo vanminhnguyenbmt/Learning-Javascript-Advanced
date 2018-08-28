@@ -2,8 +2,8 @@ var nguyen = {
     firstname: 'Van',
     lastname: 'Nguyen',
     showName: function () {
-    console.log(firstname + ' ' + lastname);
-}
+        console.log(this.firstname + ' ' + this.lastname);
+    }
 }
 
 function displayName(age, address) {
