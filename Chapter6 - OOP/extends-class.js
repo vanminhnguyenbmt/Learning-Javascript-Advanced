@@ -1,29 +1,50 @@
 // extends class
 
-class User {
-    constructor(firstname, lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        console.log('In class User');
-    }
+// class User {
+//     constructor(firstname, lastname) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//         console.log('In class User');
+//     }
     
-    showName() {
-        return this.firstname + ' ' + this.lastname;
-    }
+//     showName() {
+//         return this.firstname + ' ' + this.lastname;
+//     }
+// }
+
+// class Student extends User {
+//     constructor(firstname, lastname, id) {
+//         super(firstname, lastname);
+//         this.id = id;
+//     }
+
+//     showId() {
+//         return this.id;
+//     }
+// }
+
+// var nguyen = new Student('Minh', 'Nguyen', '22');
+
+// console.log(nguyen.showName());
+// console.log(nguyen.showId());
+
+
+
+
+// dùng function constructor và prototype
+
+function User(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
 }
 
-class Student extends User {
-    constructor(firstname, lastname, id) {
-        super(firstname, lastname);
-        this.id = id;
-    }
-
-    showId() {
-        return this.id;
-    }
+User.prototype.showId = function () {
+    return this.id;
 }
 
-var nguyen = new Student('Minh', 'Nguyen', '22');
+var Student = new User();
 
-console.log(nguyen.showName());
-console.log(nguyen.showId());
+Student.id = '14520616';
+
+console.log(Student.showId());
+
