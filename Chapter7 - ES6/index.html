@@ -1,1 +1,26 @@
-<script type="text/javascript" src="arrow-function.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script type="text/javascript" src="this-in-arrow-function.js"></script> -->
+</head>
+
+<body>
+    <button>Click Me</button>
+    <script>
+        var button = document.querySelector('button');
+
+        // button.addEventListener('click', function () {
+        //     console.log(this);
+        //     this.innerHTML = 'Wasssuppp';
+        // })
+
+
+        button.addEventListener('click', () => {
+            console.log(this);
+            this.innerHTML = 'Wasssuppp'; // this.button.innerHTML = 'Wasssuppp'; vì this đang ở global nên this.button thì text đổi được
+        })
+    </script>
+</body>
+
+</html>
