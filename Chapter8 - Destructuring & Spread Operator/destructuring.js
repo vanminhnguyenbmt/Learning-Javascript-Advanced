@@ -24,4 +24,7 @@ const { firstname: first, lastname: last, email: mail } = user;
 // const { block, number } = user.address;
 // hoặc
 const { address } = user;
-const { block, number } = address; 
+// const { block, number } = address; 
+
+// giá trị mặc định của destructuring
+const { block, number, street = 'Phan Dang Luu' } = address;
