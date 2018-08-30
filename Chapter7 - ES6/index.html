@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <!-- <script type="text/javascript" src="this-in-arrow-function.js"></script> -->
+    <script type="text/javascript" src="this-in-arrow-function.js"></script>
 </head>
 
 <body>
     <button>Click Me</button>
-    <script>
+    <!-- <script>
         var button = document.querySelector('button');
 
         // button.addEventListener('click', function () {
@@ -15,12 +15,12 @@
         //     this.innerHTML = 'Wasssuppp';
         // })
 
-
+        button.addEventListener('click', onclick);
         button.addEventListener('click', () => {
             console.log(this);
             this.innerHTML = 'Wasssuppp'; // this.button.innerHTML = 'Wasssuppp'; vì this đang ở global nên this.button thì text đổi được
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
