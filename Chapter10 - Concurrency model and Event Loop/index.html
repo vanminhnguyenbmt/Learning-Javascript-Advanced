@@ -12,6 +12,7 @@
 
     <script>
 
+        // blocking
         console.log('Go to fb.com');
 
         console.log('Press like');
@@ -26,7 +27,8 @@
         button.addEventListener('click', function () {
             console.log('Liked');
         });
-
+        
+        // non-blocking
         console.log('start');
 
         setTimeout(function wait5000s() {
