@@ -6,7 +6,44 @@
 </head>
 
 <body>
-    <script src="synchronous.js" type="text/javascript"></script>
+    <!-- <script src="synchronous.js" type="text/javascript"></script> -->
+
+    <button>Like</button>
+
+    <script>
+
+        console.log('Go to fb.com');
+
+        console.log('Press like');
+
+        const button = document.querySelector('button');
+
+        var i = 0;
+        while (i < 10000000) {
+            i++;
+        }
+
+        button.addEventListener('click', function () {
+            console.log('Liked');
+        });
+
+        console.log('start');
+
+        setTimeout(function wait5000s() {
+            console.log('wait 5000s');
+        }, 5000);
+
+        setTimeout(function wait10000s() {
+            console.log('wait 10000s');
+        }, 10000);
+
+        setTimeout(function wait20000s() {
+            console.log('wait 20000s');
+        }, 20000);
+
+        console.log('finish');
+
+    </script>
 </body>
 
 </html>
