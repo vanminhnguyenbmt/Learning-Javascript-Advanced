@@ -7,12 +7,17 @@ const pokemonPromise = fetch(
 );
 
 console.log(typeof pokemonPromise);
+console.log(pokemonPromise);
 
 pokemonPromise
     .then(response => {
+        console.log(pokemonPromise);
         return response.json();
     })
     .then(data => console.log(data))
-    .catch(err => console.log(err));
+    .catch(err => {
+        console.log(err);
+        console.log(pokemonPromise);
+    });
 
 console.log('finish download pokemons');
