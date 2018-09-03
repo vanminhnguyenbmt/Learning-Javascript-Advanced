@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- <script src="intro-promise.js" type="text/javascript"></script> -->
+    <button>Click Me</button>
+    <script>
+        function startClick(resolve, rejecte) {
+            var count = 0;
+            const button = document.querySelector('button');
+            button.addEventListener('click', function () {
+                count++;
+            });
+
+            setTimeout(function () {
+                if (count >= 5) {
+                    // alert('resolved');
+                    resolve('resolved: you click more than 5 times');
+                } else {
+                    // alert('rejected');
+                    rejecte('rejected: you click less than 5 times');
+                }
+            }, 2000);
+        }
+
+        startClick((successMessage) => {
+            alert(successMessage);
+        }, (err) => {
+            alert(err);
+        })
+
+    </script>
+</body>
+
+</html>
